@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="start/style.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Satisfy&display=swap');
+        </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader"></div>
+    <!-- header  -->
+    <header>
+        <!-- video -->
+        <video autoplay loop muted plays-inline class="video">
+            <source src="start/images/video.mp4" type="video/mp4">
+        </video>
+        <!-- Social Media -->
+         <div class="follow">
+            <ul>
+                <li><a href="" alt="facebook" target="_blank"><i class="fa-brands fa-facebook-f "></i></a></li>
+                <li><a href="" target="_blank"><i class="fa-brands fa-instagram "></i></a></li>
+                <li><a href="" target="_blank"><i class="fa-brands fa-x-twitter "></i></a></li>
+                <li><a href="" target="_blank"><i class="fa-brands fa-youtube "></i></a></li>
+                <li><a href="" target="_blank"><i class="fa-brands fa-tiktok "></i></a></li>
+                <li><a href="" target="_blank"><i class="fa-brands fa-patreon"></i></a></li>
+            </ul>
+        </div>
+        <br>
+        <!-- <div class="heading">
+            <h4>No Music <span>♪</span> </h4>
+        </div> -->
+        <div class="logo">
+            <img src="start/images/logo.png" alt="logo">
+            <h3>Remake of famous nasheeds without music</h3>
+        </div>
+        <!-- sticky nav bar at the right side -->
+        <nav>
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Nasheed</a></li>
+                <li><a href="">Login</a></li>
+            </ul>
+        </nav>
+        <!-- blur at the end of he video -->
+        <div class="yes"></div> 
+    </header>
+    
+    <section class="about">
+        <h1 class="topic">━ ◦ Aim of the Website ◦ ━</h1>
+        <p>A professional team dedicated to Remaking of famous Nasheeds without Music. Let's assemble all #NoMusic fans here. <br><br>
+            This website exists to make famous nasheeds without music is to maintain a pure and focused expression of faith and spirituality. It offer inspiration and solace without the distractions of instrumental music. <br><br>
+            Note: Daf and Humming used as BGM.Dedicated to all Non - Music fans. </p>
+    </section>
+
+    <!-- audio player -->
+    <section class="nasheed">
+        
+          <h1 class="topic">━ ◦ Nasheeds ◦ ━</h1>
+        <!-- Player 1 -->
+         <div class="player">
+            <img src="start/images/sisters.png" alt="Vinyl Record" class="vinyl">
+            <div class="controls">
+                <h2>Sisters with Hijab</h2>
+                <p>by Castillo Nasheeds</p>
+                <div class="progress-bar" id="progress-bar1">
+                    <div class="progress" id="progress1"></div>
+                </div>
+                <div class="buttons">
+                    <i class="fa fa-play" id="playPause1"></i>
+                </div>
+                <audio id="audio1">
+                    <source src="start/images/Sisters With Hijab حجابي - Latest NO MUSIC Version  Acapella (Lyrics).mp3" type="audio/mp3">
+                </audio>
+            </div>
+        </div>
+
+        <br> <br>
+
+        <!-- Player 2 -->
+         <div class="player">
+            <img src="start/images/Maulana.png" alt="Vinyl Record" class="vinyl">
+            <div class="controls">
+                <h2>Maula Ya Salli Wa Sallim</h2>
+                <p>by Mohamed Tarek & Mohamed Youssef</p>
+                <div class="progress-bar" id="progress-bar2">
+                    <div class="progress" id="progress2"></div>
+                </div>
+                <div class="buttons">
+                    <i class="fa fa-play" id="playPause2"></i>
+                </div>
+                <audio id="audio2">
+                    <source src="start/images/Medley - Latest NO MUSIC Version  Mohamed Tarek & Mohamed Youssef (Lyrics).mp3" type="audio/mp3">
+                </audio>
+            </div>
+        </div>
+
+        <br> <br>
+
+        <!-- Player 3 -->
+        <div class="player">
+            <img src="start/images/Amantu.png" alt="Vinyl Record" class="vinyl">
+            <div class="controls">
+                <h2>Amantu Billahi</h2>
+                <p>by Ayisha Abdul Basith</p>
+                <div class="progress-bar" id="progress-bar3">
+                    <div class="progress" id="progress3"></div>
+                </div>
+                <div class="buttons">
+                    <i class="fa fa-play" id="playPause3"></i>
+                </div>
+                <audio id="audio3">
+                    <source src="start/images/Amantu Billahi - Official NO MUSIC Version  Ayisha Abdul Basith (Lyrics).mp3" type="audio/mp3">
+                </audio>
+            </div>
+        </div>
+
+        <br> <br>
+
+        <!-- Player 4 -->
+        <div class="player">
+            <img src="start/images/Rahman.png" alt="Vinyl Record" class="vinyl">
+            <div class="controls">
+                <h2>Rahman Ya Rahman</h2>
+                <p>by  Sabyan Gambus</p>
+                <div class="progress-bar" id="progress-bar4">
+                    <div class="progress" id="progress4"></div>
+                </div>
+                <div class="buttons">
+                    <i class="fa fa-play" id="playPause4"></i>
+                </div>
+                <audio id="audio4">
+                    <source src="start/images/Rahman Ya Rahman - Latest NO MUSIC Version  Sabyan Gambus (Lyrics).mp3" type="audio/mp3">
+                </audio>
+            </div>
+        </div>
+
+        <br><br><br>
+    </section>
+    <script src="start/script.js"></script>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   
+</body>
+</html>
