@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+/* css start */
+html{
+    overflow-x: hidden;
+}
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(images/night.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+/* back button*/
+.back{
+    width: 15%;
+    height: 15%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #c8aa77;
+    a{
+        text-decoration: none;
+        color:  white;
+    }
+}
+.back:hover {
+    background-color: #b09364;
+    a{
+        color: #960215;
+    }
+}
+
+
+/* ----------------main start-------------------------- */
+/*the box with the login inputs and with the hover effect */
+.page{
+    position: relative;
+    display: flex;
+    margin-top: 25%;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.37);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+}
+h2{
+    font-size: 2em;
+    text-align: center;
+    color: #BB661B;
+}
+
+.input{
+    position: relative;
+    width: 320px;
+    margin: 30px 0;
+    input{
+        width: 100%;
+        height: 50px;   
+        background: transparent;
+        border: 2px soild #fff;
+        outline: none;
+        border-radius: 5px;
+        font-size: 1em;
+        color: #fff;
+        padding: 0 10px 0 35px;
+    }
+    .icon{
+        position: absolute;
+        left: 10px;
+        color: #fff;
+        font-size: 1.2em;
+        line-height: 55px;
+    }
+}
+
+.input input::placeholder{
+    color: #fff;
+}
+
+.forget{
+    margin: -15px 0 15px;
+    a{
+        color: #fff;
+        font-size: 0.9em;
+        text-decoration: none;
+    }
+}
+.forget a:hover{
+    text-decoration: underline;
+    color: #BB661B;
+}
+
+button{
+    position: relative;
+    width: 100%;
+    height: 45px;
+    background-color: #c8aa77;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
+button:hover{
+    color: #fff;
+    background-color: #BB661B ;
+}
+
+.register{
+    font-size: 0.9em;
+    text-align: center;
+    margin: 25px 0 ;
+    p{
+        color: #fff;
+    }
+    p a{
+        color: #c8aa77;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    p a:hover{
+        text-decoration:underline ;
+        color: #BB661B;
+    }
+}
+/* ----------------------main end--------------543001------------ */

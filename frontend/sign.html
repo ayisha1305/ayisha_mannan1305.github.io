@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" href="login.css">
+
+</head>
+<body>
+    <!-- header start-->
+    <header>
+        <!-- nav start -->
+       <button class="back"><a href="/index.html">← Back</a></button>
+        <!-- nav end -->
+    </header>
+    <!-- header end -->
+    <!-- main end -->
+    <main>
+        <!-- the box with the login inputs and with the hover effect -->
+        <div class="page"  onmouseover="changeBgImage(true)" onmouseout="changeBgImage(false)">
+            <form action="">
+                <h2>Sign Up</h2>
+                <!-- login inputs -->
+                <div class="input">
+                    <input type="text" id="signup-name" placeholder="Username" required>
+                </div>
+                <div class="input">
+                    <input type="email" id="signup-email" placeholder="Email" required>
+                </div>
+                <div class="input">
+                    <input type="password" id="signup-password" placeholder="Password" required>
+                </div>
+                <button type="submit" id="signup-btn">Sign in</button>
+                <p id="signup-error" style="color: red; display: none;">Please fill in all fields.</p>
+                <div class="register">
+                    <p>Have an account?<a href="login.html"> Login</a></p>
+                </div>
+            </form>
+        </div>
+        <br><br>
+    </main>
+    <!-- main end -->
+
+    <!-- javascript -->
+    <script>
+        // hover effect for image change
+        function changeBgImage(isHover) {
+            const body = document.body;
+            if (isHover) {
+                body.style.backgroundImage = "url('images/day.jpg')"; /* Background image on hover */ 
+            } else {
+                body.style.backgroundImage = "url('images/night.jpg')"; /* Default background image */
+            }
+        }
+
+        // Signup Functionality
+// document.getElementById('signup-btn').addEventListener('click', async () => {
+//   const name = document.getElementById('signup-name').value.trim();
+//   const email = document.getElementById('signup-email').value.trim();
+//   const password = document.getElementById('signup-password').value.trim();
+//   const error = document.getElementById('signup-error');
+
+//   if (name && email && password) {
+//       try {
+//           const response = await fetch('http://localhost:5000/api/user/', {
+//               method: 'POST',
+//               headers: {
+//                   'Content-Type': 'application/json',
+//               },
+//               body: JSON.stringify({ name, email, password }),
+//           });
+
+//           const data = await response.json();
+
+//           if (response.ok) {
+//               alert('Sign Up Successful! Redirecting to Login page...');
+//               error.style.display = 'none';
+//               document.getElementById('signup').classList.add('hidden');
+//               document.getElementById('login').classList.remove('hidden');
+//           } else {
+//               error.textContent = data.message || 'Sign Up Failed!';
+//               error.style.display = 'block';
+//           }
+//       } catch (err) {
+//           error.textContent = 'An error occurred. Please try again later.';
+//           error.style.display = 'block';
+//       }
+//   } else {
+//       error.textContent = 'All fields are required!';
+//       error.style.display = 'block';
+//   }
+// });
+
+document.getElementById('signup-btn').addEventListener('click', async (event) => {
+    event.preventDefault(); // Prevent form submission and page reload
+
+    const name = document.getElementById('signup-name').value.trim();
+    const email = document.getElementById('signup-email').value.trim();
+    const password = document.getElementById('signup-password').value.trim();
+    const error = document.getElementById('signup-error');
+
+    if (name && email && password) {
+        try {
+            const response = await fetch('http://localhost:5000/api/user/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ name, email, password }),
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+                alert('Sign Up Successful! Redirecting to Login page...');
+                error.style.display = 'none';
+                // Optionally redirect or hide/show elements
+            } else {
+                error.textContent = data.message || 'Sign Up Failed!';
+                error.style.display = 'block';
+            }
+        } catch (err) {
+            error.textContent = 'An error occurred. Please try again later.';
+            error.style.display = 'block';
+        }
+    } else {
+        error.textContent = 'All fields are required!';
+        error.style.display = 'block';
+    }
+});
+
+
+    </script>
+
+</body>
+</html>
