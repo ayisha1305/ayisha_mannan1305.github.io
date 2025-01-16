@@ -3,12 +3,24 @@
     box-sizing: border-box;
     padding: 0;
 }
-/* css start */
+/* css start 
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100vh;
+    overflow-x: hidden;
+}*/
 html{
     overflow-x: hidden;
 }
 body{
 
+    overflow-x: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
