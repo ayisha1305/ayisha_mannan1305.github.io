@@ -304,8 +304,25 @@ footer{
     font-weight: 600;
 }
 
+/* Responsive Design for Tablets */
 /* .................................screen size 1024................... */
-@media screen and (max-width: 1024px) {
+/* ----------------------------------(TABLET_WIREFRAME)-------------------------------------- */
+@media (max-width: 1024px) {
+    /* Logo image */
+    .logo{
+        img {
+            top: 21%;
+            left: 50%;
+            transform: translateX(-50%);
+            rotate: 0.5deg;
+            width: 80%;
+        }
+    }
+    /* main heading */
+    .topic{ 
+        font-size: 47px; 
+    }
+
     .container{
         height: 178px;
         width: 280px;
@@ -316,13 +333,16 @@ footer{
         margin-top: -10px ;
     }
 }
-/* .................................screen size 830................... */
-@media screen and (max-width: 830px) {
+
+/* Responsive Design for Mobile Devices */
+/* .................................screen size 720................... */
+/* ----------------------------------(LARGE_MOBILE_WIREFRAME)-------------------------------------- */
+@media (max-width: 720px) {
     /* logo */
     .logo{
         img {
             width: 100%;
-            }
+        }
     }
 
     /* Social Media nav Bar */
@@ -397,8 +417,6 @@ footer{
 
     }
 
-
-
     /* login page */
 .login {
     gap: 0px;
@@ -427,15 +445,19 @@ button {
 
 }
 
-/* .................................screen size 480................... */
-@media screen and (max-width: 480px) {
+/* --- Responsive styles --- */
+/* .................................screen size 540................... */
+/* ----------------------------------(SMALL_MOBILE_WIREFRAME)-------------------------------------- */
+@media  (max-width: 540px) {
 
     /* logo */
     .logo{
         img {
+            top: 30%;
             width: 100%;
         }
     }
+
     /* Social Media nav Bar */
     nav {
         top: 14%; 
@@ -468,8 +490,73 @@ button {
         font-size: 2.5em;
     }
 
-    #special{
-        font-size: 25px
+    .player {
+        display: block;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 30px;
+        margin-left: 5%;
     }
+
+    .vinyl {
+        width: 255px;
+        height: 150px;
+    }
+
+    #special{
+        font-size: 22px
+    }
+
+    .button-container {
+
+        padding-right: 10px;
+    }
+
 }
 
+/* --- Responsive styles --- */
+/* .................................screen size 360................... */
+/* ----------------------------------(X_SMALL_MOBILE_WIREFRAME)-------------------------------------- */
+@media  (max-width: 360px) {
+    /* logo */
+    .logo{
+        img {
+            top: 30%;
+        }
+    }
+
+    /* main heading */
+    .topic{
+        font-size: 25px; 
+    }
+    #special{
+        font-size: 18px;
+    }
+
+    .wrapper{
+        margin-top: -100px;
+        margin-bottom: -5px;
+    }
+
+    .about  p{
+        font-size: 17px;
+    }
+
+    span.num{
+        padding-bottom: -25px;
+        margin-top: -40px;
+        font-size: 3.5em;
+    }
+    span.text{
+        font-size: 2.5em;
+    }
+
+    /* Social Media nav Bar */
+    nav ul {
+        gap: 5px; 
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+
+}

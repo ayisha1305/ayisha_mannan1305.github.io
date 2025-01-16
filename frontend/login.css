@@ -3,21 +3,6 @@
     box-sizing: border-box;
     padding: 0;
 }
-/* css start 
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html{
-    height: 100vh;
-    overflow-x: hidden;
-}*/
-html{
-    overflow-x: hidden;
-}
 body{
 
     overflow-x: hidden;
@@ -149,4 +134,35 @@ button:hover{
         color: #BB661B;
     }
 }
-/* ----------------------main end--------------543001------------ */
+/* ----------------------main end-------------------------- */
+
+
+/* Responsive Design for Mobile Devices */
+/* .................................screen size 720................... */
+/* ----------------------------------(LARGE_MOBILE_WIREFRAME)-------------------------------------- */
+@media (max-width: 720px) {
+    /* back button*/
+    .back{
+        width: 25%;
+    }
+}
+
+
+
+/* --- Responsive styles --- */
+/* .................................screen size 540................... */
+/* ----------------------------------(SMALL_MOBILE_WIREFRAME)-------------------------------------- */
+@media  (max-width: 540px) {
+    /* back button*/
+    .back{
+        width: 35%;
+    }
+    .page{
+        width: 300px;
+        height: 400px;
+        margin-top: 33%;
+    }
+    .input{
+        width: 250px;
+    }
+}
